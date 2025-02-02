@@ -1,25 +1,26 @@
-#include "Location.h"
+#include "Driver.h"
 #include <iostream>
+#include <string>
 Driver::Driver() {
-	firstName;
-	lastName;
-	Id;
+	this->firstName = "";
+	this->lastName = "";
+	this->Id = 0;
 }
-	void Driver::setFirstName(char a) {
-		firstName = a;
-	}
-	void Driver::setLastName(char a) {
-		lastName = a;
-	}
-	void Driver::setId(int a) {
-		Id = a;
-	}
-	char Driver::getFirstName() {
-		return firstName;
-	}
-	char Driver::getLastName() {
-		return lastName;
-	}
-	int Driver::getId() {
-		return Id;
-	}
+void Driver::setFirstName(std::string a) {
+	this->firstName = a;
+}
+void Driver::setLastName(std::string a) {
+	this->lastName = a;
+}
+void Driver::setId(int a) {
+	this->Id = a;
+}
+std::string Driver::getFirstName() {
+	return this->firstName;
+}
+std::string Driver::getLastName() {
+	return this->lastName;
+}
+int Driver::getId() {
+	return this->Id;
+}
